@@ -31,11 +31,11 @@ body {
 
 /* Navbar Styling in Light Mode */
 .navbar {
-    background-color: #1da1f2 !important; /* Blue navbar */
+    background-color: #1da1f2; /* Blue navbar */
 }
 
 .navbar-brand, .nav-link {
-    color: white !important; /* White text in navbar */
+    color: white; /* White text in navbar */
 }
 
 /* Footer Styling in Light Mode */
@@ -57,12 +57,12 @@ body.dark-mode {
 
 /* Navbar Styling in Dark Mode */
 .dark-mode .navbar {
-    background-color: #192734 !important; /* Dark background for navbar */
+    background-color: #192734; /* Dark background for navbar */
 }
 
 .dark-mode .navbar-brand,
 .dark-mode .nav-link {
-    color: #ffffff !important; /* White text in dark mode */
+    color: #ffffff; /* White text in dark mode */
 }
 
 /* Footer Styling in Dark Mode */
@@ -76,13 +76,13 @@ body.dark-mode {
 
 /* Home Page Text Styling */
 .home-content {
-    color: #333333 !important; /* Dark grey text in light mode */
+    color: #333333; /* Dark grey text in light mode */
     text-align: center; /* Centers text */
 }
 
 /* Ensure text is readable in dark mode */
 .dark-mode .home-content {
-    color: #e1e8ed !important; /* Light grey text in dark mode */
+    color: #e1e8ed; /* Light grey text in dark mode */
 }
 
 /* General Text Readability in Dark Mode */
@@ -95,7 +95,7 @@ body.dark-mode {
 .dark-mode p,
 .dark-mode span,
 .dark-mode li {
-    color: #e1e8ed !important; /* Ensures all text is light in dark mode */
+    color: #e1e8ed; /* Ensures all text is light in dark mode */
 }
 
 /* ---------------------------- Carousel Styling ---------------------------- */
@@ -164,7 +164,7 @@ body.dark-mode {
 
     /* Ensure labels and inputs are left-aligned */
     .contact-form label {
-        text-align: left !important;
+        text-align: left;
         display: block;
         font-weight: bold;
     }
@@ -183,7 +183,7 @@ body.dark-mode {
 }
 
 .dark-mode .contact-form label {
-    color: #e1e8ed !important; /* Light label text in dark mode */
+    color: #e1e8ed; /* Light label text in dark mode */
 }
 
 /* ---------------------------- Floating Form Fields ---------------------------- */
@@ -212,4 +212,16 @@ body.dark-mode {
 /* Dark Mode - Profile Image */
 .dark-mode .profile-img {
     border-color: #e1e8ed; /* Light border color in dark mode */
+}
+
+/* ---------------------------- Portfolio Section ---------------------------- */
+
+/* Portfolio Text Styling - Dark Mode */
+.dark-mode .portfolio-card .card-body {
+    color: #e1e8ed; /* Light text color for better readability in dark mode */
+}
+
+/* Portfolio Image - Ensure it doesn't get affected */
+.dark-mode .portfolio-card img {
+    filter: brightness(0.7); /* Slightly darken images in dark mode */
 }
