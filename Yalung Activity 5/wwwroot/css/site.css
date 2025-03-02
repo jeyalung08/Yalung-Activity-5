@@ -1,0 +1,215 @@
+﻿/* Base Font Size for Accessibility */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* Increase font size for larger screens */
+    }
+}
+
+/* Focus Styles for Buttons, Links, Form Controls */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Ensure the body takes the full height of the viewport */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* ---------------------------- Light Mode (Default) ---------------------------- */
+
+/* General Body Styling in Light Mode */
+body {
+    background-color: #e6ecf0; /* Light background color */
+    color: #14171a; /* Dark text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling in Light Mode */
+.navbar {
+    background-color: #1da1f2 !important; /* Blue navbar */
+}
+
+.navbar-brand, .nav-link {
+    color: white !important; /* White text in navbar */
+}
+
+/* Footer Styling in Light Mode */
+.footer {
+    background-color: #1da1f2; /* Match navbar background color in light mode */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e1e8ed; /* Light gray border */
+}
+
+/* ---------------------------- Dark Mode ---------------------------- */
+
+/* Dark Mode General Body Styling */
+body.dark-mode {
+    background-color: #15202b; /* Dark background color */
+    color: #e1e8ed; /* Light text color */
+}
+
+/* Navbar Styling in Dark Mode */
+.dark-mode .navbar {
+    background-color: #192734 !important; /* Dark background for navbar */
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: #ffffff !important; /* White text in dark mode */
+}
+
+/* Footer Styling in Dark Mode */
+.dark-mode .footer {
+    background-color: #192734; /* Match navbar background color in dark mode */
+    color: #e1e8ed; /* Light text in footer */
+    border-top: 1px solid #38444d; /* Dark border */
+}
+
+/* ---------------------------- Page Content ---------------------------- */
+
+/* Home Page Text Styling */
+.home-content {
+    color: #333333 !important; /* Dark grey text in light mode */
+    text-align: center; /* Centers text */
+}
+
+/* Ensure text is readable in dark mode */
+.dark-mode .home-content {
+    color: #e1e8ed !important; /* Light grey text in dark mode */
+}
+
+/* General Text Readability in Dark Mode */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode li {
+    color: #e1e8ed !important; /* Ensures all text is light in dark mode */
+}
+
+/* ---------------------------- Carousel Styling ---------------------------- */
+
+/* Carousel Images - Uniform Size */
+.carousel-img {
+    height: 500px;
+    object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+}
+
+/* ---------------------------- Links ---------------------------- */
+
+/* Footer Links Styling */
+.footer a {
+    color: #007bff; /* Default link color in light mode */
+    text-decoration: none; /* Remove underline */
+}
+
+    /* Hover effect for links */
+    .footer a:hover {
+        color: #0056b3; /* Darker blue when hovering */
+        text-decoration: underline; /* Underline on hover */
+    }
+
+/* Footer Links in Dark Mode */
+.dark-mode .footer a {
+    color: #1da1f2; /* Brighter link color for dark mode */
+}
+
+    .dark-mode .footer a:hover {
+        color: #0d8af0; /* Slightly darker on hover */
+    }
+
+/* ---------------------------- Forms and Buttons ---------------------------- */
+
+/* Form Fields in Dark Mode */
+.dark-mode .form-control,
+.dark-mode .form-check-input {
+    background-color: #253341; /* Dark background for form elements */
+    color: #e1e8ed; /* Light text */
+    border: 1px solid #38444d; /* Dark border for form elements */
+}
+
+    .dark-mode .form-control::placeholder {
+        color: #8899a6; /* Lighter placeholder text */
+    }
+
+/* Button Styles in Dark Mode */
+.dark-mode .btn-outline-light {
+    border-color: #e1e8ed;
+    color: #e1e8ed;
+}
+
+    .dark-mode .btn-outline-light:hover {
+        background-color: #e1e8ed;
+        color: #14171a; /* Dark text when hovered */
+    }
+
+/* ---------------------------- Contact Form Styling ---------------------------- */
+
+/* Contact Form Base Styling */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+    /* Ensure labels and inputs are left-aligned */
+    .contact-form label {
+        text-align: left !important;
+        display: block;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        text-align: left;
+    }
+
+/* Remove white background from form in dark mode */
+.dark-mode .contact-form .form-control {
+    background-color: #192734; /* Dark background in dark mode */
+    color: #e1e8ed;
+    border: 1px solid #38444d;
+}
+
+.dark-mode .contact-form label {
+    color: #e1e8ed !important; /* Light label text in dark mode */
+}
+
+/* ---------------------------- Floating Form Fields ---------------------------- */
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+/* ---------------------------- About Page Profile Image ---------------------------- */
+
+/* About Page - Profile Image Styling */
+.profile-img {
+    width: 250px; /* Adjust width to a suitable size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the container */
+    border-radius: 50%; /* Keeps the image round */
+    border: 3px solid #1da1f2; /* Border color matching the navbar */
+}
+
+/* Dark Mode - Profile Image */
+.dark-mode .profile-img {
+    border-color: #e1e8ed; /* Light border color in dark mode */
+}
