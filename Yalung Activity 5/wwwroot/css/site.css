@@ -216,12 +216,19 @@ body.dark-mode {
 
 /* ---------------------------- Portfolio Section ---------------------------- */
 
-/* Portfolio Text Styling - Dark Mode */
-.dark-mode .portfolio-card .card-body {
-    color: #e1e8ed; /* Light text color for better readability in dark mode */
+/* Portfolio Card Background in Dark Mode */
+.dark-mode .portfolio-card {
+    background-color: #253341; /* Dark background color for cards in dark mode */
+    color: #e1e8ed; /* Light text color */
 }
 
-/* Portfolio Image - Ensure it doesn't get affected */
-.dark-mode .portfolio-card img {
-    filter: brightness(0.7); /* Slightly darken images in dark mode */
-}
+    /* Portfolio Text Styling - Dark Mode */
+    .dark-mode .portfolio-card .card-body {
+        color: #e1e8ed; /* Light text color for better readability in dark mode */
+    }
+
+    /* Portfolio Image - Ensure it doesn't get affected */
+    .dark-mode .portfolio-card img {
+        filter: brightness(0.7); /* Slightly darken images in dark mode */
+    }
+
